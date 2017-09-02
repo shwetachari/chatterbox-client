@@ -16,10 +16,11 @@ body {
 }
 
 #main h1 {
+    font-family: 'Croissant One', cursive, sans-serif;
+    color: skyblue;
     margin-top: 0;
     font-size: 35px;
     margin-bottom: 5px;
-    padding: 5px;
 }
 
 #main h1 span {
