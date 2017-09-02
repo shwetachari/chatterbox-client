@@ -46,6 +46,13 @@ body {
     line-height: 13px;
 }
 
+#roomSelect ul li {
+  cursor: pointer;
+}
+#roomSelect ul li:hover {
+  background-color: #ddd;
+}
+
 form {
     padding: 20px;
     padding-left: 0;
@@ -87,4 +94,3 @@ form input[type=text] {
     color: #fff;
     background-color: #0090da;
 }
-
