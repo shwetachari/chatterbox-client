@@ -86,7 +86,7 @@ app.handleUsernameClick = function(array) {
   });
 };
 
-app.handleSubmit = function(room) {
+app.handleSubmit = function(friends, room) {
   var obj = {
     username: $('#inputUsername').val(),
     text: $('#inputMessage').val(),
@@ -130,7 +130,7 @@ $(document).ready(function() {
   });
 
   $('#submitMessage').click(function() {
-    app.handleSubmit(globalRoom);
+    app.handleSubmit(friends, globalRoom);
   });
   
   $('#chats').on('click', '.chat .username', function() {
