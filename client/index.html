@@ -29,24 +29,28 @@
     <script src="scripts/app.js"></script>
   </head>
   <body>
-    <div id="main" class="col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3 col-xs-12 col-xs-offset-0">
+    <div id="main" class="col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 col-xs-12 col-xs-offset-0 text-center">
       <h1 class="col-xs-12 text-center">chatterbox</h1>
+      
+      <div class="col-sm-12 col-sm-offset-0 text-center">
+        <input type="text" class="col-xs-12" id="inputUsername" placeholder="Enter Username" /><br/>
+        <textarea class="col-xs-12" id="inputMessage" placeholder="Enter Message"></textarea>
+        <div class="col-xs-12">
+          <button type="submit" id="submitMessage" class="btn btn-primary">Submit</button>
+        </div>
+      </div>
+      
       <div id="roomSelect" class="dropdown col-xs-12 text-center">
         <button class="col-xs-12 btn btn-primary dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
           Rooms
           <span class="caret"></span>
         </button>
-        <ul class="dropdown-menu">
+        <ul class="dropdown-menu text-center">
         </ul>
       </div>
-      <!-- Your HTML goes here! -->
     </div>
-        <input type="text" class="col-sm-6 col-sm-offset-3 col-xs-12 col-xs-offset-0" id="inputUsername" placeholder="Enter Username" />
-        <textarea class="col-sm-6 col-sm-offset-3 col-xs-12 col-xs-offset-0" id="inputMessage" placeholder="Enter Message"></textarea>
-        <div class="col-xs-12">
-          <button type="submit" id="submitMessage" class="btn btn-primary col-sm-2 col-sm-offset-5">Submit</button>
-        </div>
+    
     </div>
-    <div id="chats"></div>
+    <div id="chats" class="col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 col-xs-12 col-xs-offset-0"></div>
   </body>
 </html>

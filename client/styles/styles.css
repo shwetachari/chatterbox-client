@@ -1,34 +1,32 @@
 body {
-    background: #eee;
+    background-color: skyblue !important;
     text-align: center;
     padding: 0 25px;
     font-family: arial, sans-serif;
 }
 
 #main, #chats {
-    width: 500px;
     margin: auto;
     text-align: left;
     background: white;
-    padding: 50px 60px;
-    border: solid #ddd;
-    border-width: 0 1px 1px 1px;
+    padding: 50px 75px;
+    border: solid skyblue;
+    border-width: 0 0 1px;
 }
 
 #main h1 {
     font-family: 'Croissant One', cursive, sans-serif;
     color: skyblue;
-    margin-top: 0;
-    font-size: 35px;
-    margin-bottom: 5px;
+    margin-bottom: 30px;
+    font-size: 50px;
+    padding:15px 0;
+    border-style:solid;
+    border-width: 1px 0;
+    border-color: skyblue;
 }
 
-#main h1 span {
-    font-style:italic;
-}
-
-#main ul {
-    padding-left: 20px;
+#main {
+    color: skyblue;
 }
 
 #main .error {
@@ -47,33 +45,57 @@ body {
     line-height: 13px;
 }
 
+button, #roomSelect ul {
+    width: 300px;    
+}
+
+#main input, #main textarea {
+    width: 300px;
+    color: skyblue;
+    margin-top: 10px;
+    padding:20px;
+    border-radius:15px;
+    border: 1px solid skyblue;
+}
+
+#main input::placeholder, #main textarea::placeholder {
+    color: skyblue;
+}
+
+#main button {
+    margin-top: 10px;
+    background-color: skyblue;
+    border: none;
+}
+
+#roomSelect button {
+    margin-bottom:20px;
+}
+
 #roomSelect ul li {
-  cursor: pointer;
+    padding: 2px 15px;
+    cursor: pointer;
+    color: skyblue;
+    border-bottom: 1px solid skyblue;
 }
 #roomSelect ul li:hover {
   background-color: #ddd;
 }
 
-form {
-    padding: 20px;
-    padding-left: 0;
-    margin-bottom: 20px;
-}
-
-form input[type=text] {
-    margin-right: 10px;
-    width: 70%;
-    font-size: 12px;
-    padding: 5px;
-}
-
 .chat {
-    padding: 5px;
-    margin-bottom: 5px;
-    background-color: #eee;
+    font-family: 'Raleway', sans-serif;
+    padding: 15px 25px;
+    margin-bottom: 10px;
+    background-color: skyblue;
+    color:white;
+    word-wrap: break-word;
+    border-radius: 10px;
 }
 
 .chat .username {
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid white;
     font-weight: 800;
 }
 
@@ -83,6 +105,10 @@ form input[type=text] {
 
 .chat:hover {
     background-color: #ddd;
+}
+
+.chat .timestamp {
+    text-align: right;
 }
 
 .spinner {
@@ -98,4 +124,13 @@ form input[type=text] {
 .friend {
     color: #fff;
     background-color: #0090da;
+}
+
+@media(max-width: 530px) {
+    #main input, #main textarea {
+        width: 150px;
+    }
+    button, #roomSelect ul {
+        width: 150px;    
+    }
 }
